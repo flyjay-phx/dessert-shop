@@ -1,92 +1,55 @@
-/* 유럽 카페 메뉴판: 종이 위에 금색 이중 테두리, 세리프 글씨, 점선으로 이어진 가격 */
-.menu {
-  max-width: 1000px;
-  width: calc(100% - 32px);
-  margin: 32px auto;
-  padding: 48px 40px 36px;
-  background: rgba(255, 250, 240, 0.55);
-  border: 2px solid var(--gold);
-  outline: 1px solid var(--gold);
-  outline-offset: -10px;
-  box-shadow: 0 10px 30px rgba(59, 42, 30, 0.12);
-}
-
-.header {
-  text-align: center;
-  margin-bottom: 36px;
-}
-
-.since {
-  font-family: var(--font-display), Georgia, serif;
-  font-style: italic;
-  color: var(--ink-soft);
-  letter-spacing: 0.1em;
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 16px;
 }
 
 .title {
-  font-family: var(--font-display), Georgia, serif;
-  font-size: clamp(36px, 7vw, 58px);
-  font-weight: 700;
-  color: var(--accent);
-  margin: 6px 0 2px;
-}
-
-.subtitle {
-  font-size: 18px;
-  letter-spacing: 0.4em;
-  color: var(--ink);
-}
-
-.ornament {
-  color: var(--gold);
-  margin: 14px 0 6px;
-  letter-spacing: 0.5em;
+  font-size: 28px;
+  margin-bottom: 4px;
 }
 
 .count {
-  font-size: 14px;
-  color: var(--ink-soft);
+  color: #6b7280;
+  margin-bottom: 24px;
 }
 
 .empty {
   padding: 40px;
   text-align: center;
-  color: var(--ink-soft);
+  color: #6b7280;
 }
 
 .grid {
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 28px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
 }
 
 .card {
-  background: #fffaf2;
-  border: 1px solid var(--paper-dark);
-  padding: 12px 12px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 12px;
+  background: #fff;
+  color: #111;
 }
 
-.soldOutCard .image img {
-  filter: grayscale(0.85);
-  opacity: 0.7;
-}
-
-.soldOutCard .name,
-.soldOutCard .price {
-  color: var(--ink-soft);
-  text-decoration: line-through;
+.soldOutCard {
+  opacity: 0.6;
 }
 
 .image {
   position: relative;
-  aspect-ratio: 4 / 3;
-  background: var(--paper-dark);
+  height: 140px;
+  border-radius: 8px;
+  background: #f3f4f6;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 12px;
+  color: #9ca3af;
+  margin-bottom: 10px;
   overflow: hidden;
 }
 
@@ -94,70 +57,31 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
-}
-
-.noImage {
-  color: var(--ink-soft);
 }
 
 .badge {
   position: absolute;
-  top: 14px;
-  right: -34px;
-  transform: rotate(35deg);
-  background: var(--accent);
+  top: 8px;
+  left: 8px;
+  background: #dc2626;
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
-  padding: 4px 40px;
-  letter-spacing: 0.2em;
+  padding: 2px 8px;
+  border-radius: 999px;
 }
 
 .category {
-  font-family: var(--font-display), Georgia, serif;
-  font-style: italic;
-  font-size: 14px;
-  color: var(--gold);
-  margin-bottom: 4px;
-}
-
-.line {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
+  font-size: 13px;
+  color: #6b7280;
 }
 
 .name {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 17px;
+  margin: 4px 0;
   overflow-wrap: anywhere;
-}
-
-.dots {
-  flex: 1;
-  min-width: 16px;
-  border-bottom: 2px dotted var(--gold);
-  transform: translateY(-4px);
 }
 
 .price {
   font-weight: 700;
-  white-space: nowrap;
-}
-
-.footer {
-  margin-top: 36px;
-  padding-top: 18px;
-  border-top: 1px solid var(--paper-dark);
-  text-align: center;
-  font-size: 14px;
-  font-style: italic;
-  color: var(--ink-soft);
-}
-
-@media (max-width: 560px) {
-  .menu {
-    padding: 36px 20px 28px;
-  }
 }
