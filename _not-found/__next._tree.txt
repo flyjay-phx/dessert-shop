@@ -1,0 +1,4 @@
+:HL["/dessert-shop/_next/static/chunks/21ofiasyv-z6c.css","style"]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":"/_not-found","h":96,"c":"$Q2"}]]
+0:{"b":"aBS5fC0PZ6mvD1nk-qeVs","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
